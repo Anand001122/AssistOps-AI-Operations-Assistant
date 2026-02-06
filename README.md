@@ -38,9 +38,16 @@ ai_ops_assistant/
 
 ## 🚀 Setup & Execution
 1. **Keys**: Populate `.env` with `GITHUB_TOKEN`, `OPENWEATHERMAP_API_KEY`, and `GEMINI_API_KEY`.
-2. **Backend**: `pip install -r requirements.txt` then `python server.py`.
-3. **Frontend**: `cd frontend`, `npm install`, then `npm run dev`.
-4. **CLI**: Run `python main.py "Your Task Here"`.
+2. **Single-Command Start**: Run the following in your terminal to start both backend and frontend:
+   ```bash
+   python run.py
+   ```
+   *Note: If port 5173 is already in use, the frontend will automatically start on 5174, 5175, etc. Check the terminal output for the exact URL.*
+
+3. **Manual Start (Alternative)**:
+   - **Backend**: `python server.py` (Port 8000)
+   - **Frontend**: `cd frontend && npm run dev` (Port 5173+)
+4. **CLI**: Run `python main.py "Your Task Here"` for a direct terminal response.
 
 ---
 *Elevating operations through high-trust AI logic.*
