@@ -28,8 +28,9 @@ class VerifierAgent:
         5. NATURAL FLOW: Start directly with the core answer. 
         6. SKILL IDENTIFICATION: Analyze `topics` and `descriptions` to summarize the user's skills.
         7. FORK NARRATIVE: If `is_fork` is true, explain the origin using `parent` data naturally.
-        8. ACTIONABLE CONCLUSION: Always end with a helpful recommendation or insight.
-        9. HANDLING ERRORS: Use friendly clarification requests instead of technical error codes.
+        8. WEATHER-BASED ADVICE: If the request is about planning an event or night out and it is raining/storming, you MUST suggest specific indoor activities (e.g., "Since it's raining in Mumbai, I'd suggest booking an indoor dinner at a covered rooftop or a nice lounge instead of an outdoor walk."). If it's clear, suggest enjoying the outdoors.
+        9. ACTIONABLE CONCLUSION: Always end with a helpful recommendation or insight.
+        10. HANDLING ERRORS: Use friendly clarification requests instead of technical error codes.
         """
         
         context = f"Current Query: {user_prompt}\n\nExecution Results: {json.dumps(execution_results, indent=2)}"

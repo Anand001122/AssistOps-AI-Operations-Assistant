@@ -43,4 +43,4 @@ ai_ops_assistant/
 4. **CLI**: Run `python main.py "Your Task Here"`.
 
 ---
-*Built as a 24-Hour GenAI Intern Assignment.*
+*Elevating operations through high-trust AI logic.*
