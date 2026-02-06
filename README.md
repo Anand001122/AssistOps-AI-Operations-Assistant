@@ -40,7 +40,7 @@ ai_ops_assistant/
 1. **Keys**: Populate `.env` with `GITHUB_TOKEN`, `OPENWEATHERMAP_API_KEY`, and `GEMINI_API_KEY`.
 2. **Single-Command Start**: Run the following in your terminal to start both backend and frontend:
    ```bash
-   python run.py
+   python assistops.py
    ```
    *Note: If port 5173 is already in use, the frontend will automatically start on 5174, 5175, etc. Check the terminal output for the exact URL.*
 
